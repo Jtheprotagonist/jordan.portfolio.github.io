@@ -257,3 +257,18 @@ span {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: oblique;
 }
+.styled-video {
+  position: relative; /* Position relative to its normal position */
+  width: 350px; /* Adjust the width as needed */
+  border-radius: 25px; /* Adjust the value to achieve desired rounding */
+  margin: 20px auto; /* Center the video horizontally with auto margins */
+  top: 10px; /* Move the video 10px down */
+  left: 50px; /* Move the video 50px to the right */
+  border: 3px solid black; /* Black border */
+}
+.text-box h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #fff; /* Set the color to white, or any color you prefer */
+  text-shadow: 2px 2px 4px #000; /* Optional: Add a text shadow for a more dramatic effect */
+}
