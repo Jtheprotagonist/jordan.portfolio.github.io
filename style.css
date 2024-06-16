@@ -165,7 +165,14 @@ span {
   color: white;
   font-size: 20px;
   margin: 2em 0 3em;
+  font-family: "Comic Sans MS", "Comic Sans", cursive; /* Use a playful, cartoon-like font */
+  font-weight: bold; /* Make the text bold */
+  border: 3px solid #ffd700; /* Add a gold border */
+  padding: 5px; /* Add some padding */
+  border-radius: 10px; /* Round the corners */
+  background-color: orangered; /* Add a vibrant background color */
 }
+
 .contact-form h2 {
   text-align: center;
   margin-top: 3em;
@@ -243,7 +250,7 @@ span {
 }
 .home .home-content p {
   font-size: 22px;
-  color: orangered;
+  color: black;
   text-decoration: underline;
   font-weight: bold;
   margin-top: 20px;
