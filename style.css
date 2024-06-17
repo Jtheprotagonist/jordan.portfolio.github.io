@@ -302,37 +302,30 @@ span {
   text-align: center;
 }
 
+.new-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
 .screenshots {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 20px; /* Gap between grid items */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust the gap between screenshots */
 }
 
 .screenshot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1;
+  max-width: 300px; /* Adjust the maximum width of each screenshot */
+  text-align: center;
 }
 
 .screenshot img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
 }
 
 .screenshot p {
   margin-top: 10px;
   font-size: 16px;
-  color: #666;
-}
-.new-section h2 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px; /* Adjust the font size as needed */
-  color: orangered; /* Set the color to white, or any color you prefer */
-}
-.highlight {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px; /* Adjust the font size as needed */
-  color: black; /* Set the color to white, or any color you prefer */
+  color: #666; /* Adjust caption text color */
 }
