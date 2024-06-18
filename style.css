@@ -329,3 +329,100 @@ span {
   font-size: 16px;
   color: #666; /* Adjust caption text color */
 }
+.new-section {
+  padding: 50px 0;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  list-style: none;
+}
+
+.new-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333; /* Darker text color */
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Adjust gap between screenshots and side image */
+}
+
+.screenshots-container {
+  display: flex;
+  flex-direction: column; /* Stack screenshots and side image vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 30px; /* Adjust gap between screenshots and side image container */
+}
+
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap between screenshots */
+  max-width: 600px; /* Limit width of screenshots */
+}
+
+.screenshot {
+  flex: 1;
+  max-width: 400px; /* Increase maximum width of each screenshot */
+  text-align: center;
+  border-radius: 12px; /* Rounded corners for screenshots */
+  overflow: hidden; /* Ensure content does not overflow rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  list-style: none;
+}
+
+.screenshot:hover {
+  transform: translateY(-5px); /* Lift screenshot on hover */
+}
+
+.screenshot img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 250px; /* Increase maximum height of screenshots */
+  border-radius: 12px; /* Rounded corners for images inside screenshots */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.screenshot:hover img {
+  transform: scale(1.05); /* Scale image on hover */
+}
+.side-image-container {
+  width: 300px; /* Fixed width for side image */
+  border-radius: 12px; /* Rounded corners for side image container */
+  overflow: hidden; /* Ensure content does not overflow rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.side-image-container:hover {
+  transform: translateY(-5px); /* Lift side image container on hover */
+}
+
+.side-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Limit maximum height of side image */
+  border-radius: 12px; /* Rounded corners for side image */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.side-image:hover {
+  transform: scale(1.05); /* Scale side image on hover */
+}
+#anime-quiz {
+  font-size: 20px; /* Example style */
+  color: orangered; /* Example style */
+}
+#weather-app {
+  font-size: 20px; /* Example style */
+  color: orangered; /* Example style */
+}
+#to-do {
+  font-size: 20px; /* Example style */
+}
