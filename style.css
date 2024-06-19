@@ -426,3 +426,128 @@ span {
 #to-do {
   font-size: 20px; /* Example style */
 }
+/* Section Styling */
+.new-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 12px; /* Rounded corners */
+}
+
+/* Heading Styling */
+.new-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333; /* Darker text color */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.highlight {
+  color: orangered; /* Highlight color */
+}
+
+/* Content Container */
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  gap: 50px; /* Gap between screenshots and side image */
+}
+
+/* Screenshots Container */
+.screenshots-container {
+  display: flex;
+  flex-direction: column; /* Stack screenshots and side image vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 30px; /* Gap between screenshots and side image container */
+}
+
+/* Screenshots */
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Gap between screenshots */
+  max-width: 800px; /* Limit width of screenshots */
+}
+
+.screenshot {
+  flex: 1;
+  max-width: 300px; /* Maximum width of each screenshot */
+  text-align: center;
+  border-radius: 12px; /* Rounded corners for screenshots */
+  overflow: hidden; /* Ensure content does not overflow rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  background-color: #fff; /* White background */
+}
+
+.screenshot:hover {
+  transform: translateY(-5px); /* Lift screenshot on hover */
+}
+
+.screenshot img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px; /* Rounded corners for images inside screenshots */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.screenshot:hover img {
+  transform: scale(1.05); /* Scale image on hover */
+}
+
+/* Screenshot Captions */
+.screenshot p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666; /* Caption text color */
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Side Image Container */
+.side-image-container {
+  width: 300px; /* Fixed width for side image */
+  border-radius: 12px; /* Rounded corners for side image container */
+  overflow: hidden; /* Ensure content does not overflow rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.side-image-container:hover {
+  transform: translateY(-5px); /* Lift side image container on hover */
+}
+
+.side-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 100px; /* Rounded corners for side image */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.side-image:hover {
+  transform: scale(1.05); /* Scale side image on hover */
+}
+
+/* Custom Styles for Specific Captions */
+#anime-quiz,
+#weather-app,
+#to-do {
+  font-size: 18px; /* Increased font size */
+  font-weight: bold; /* Bold text */
+  color: #444; /* Darker caption color */
+  background-color: #f9f9f9; /* Light background color */
+  padding: 5px 10px; /* Padding around text */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Add Hover Effect to Captions */
+#anime-quiz:hover,
+#weather-app:hover,
+#to-do:hover {
+  color: orangered; /* Change color on hover */
+  background-color: #fff0e0; /* Light orange background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase shadow on hover */
+}
