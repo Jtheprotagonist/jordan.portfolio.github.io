@@ -609,3 +609,45 @@ span {
 .carousel-next {
   right: 10px;
 }
+.video-carousel-section {
+  background-color: #000;
+}
+.video-carousel-section h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #fff; /* Set the color to white, or any color you prefer */
+  text-shadow: 2px 2px 4px #000; /* Optional: Add a text shadow for a more dramatic effect */
+  display: inline-block; /* Makes the width of the element fit its content */
+  border-bottom: 2px solid #ffd700; /* Customize the underline with border-bottom */
+  padding-bottom: 5px; /* Add padding to create space between text and underline */
+  margin-bottom: 0; /* Ensure no margin at the bottom */
+}
+.link-photo-section {
+  padding: 20px; /* Add some padding to the section */
+  background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+.link-photo-section .container {
+  display: flex; /* Use flexbox to arrange items horizontally */
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Center the items horizontally */
+  gap: 20px; /* Add space between the link and the photo */
+}
+
+.link-photo-section .link-container a {
+  font-family: "Press Start 2P", cursive;
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #007bff; /* Set the link color */
+  text-decoration: none; /* Remove the underline from the link */
+  transition: color 0.3s; /* Add a transition effect for color change */
+}
+
+.link-photo-section .link-container a:hover {
+  color: #0056b3; /* Change the color on hover */
+}
+.link-photo-section .photo-container img {
+  width: 150px; /* Set the width of the photo */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+}
