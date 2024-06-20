@@ -159,7 +159,7 @@ span {
   text-shadow: 2px 2px 4px #000; /* Optional: Add a text shadow for a more dramatic effect */
   position: inherit;
   padding-left: 70px;
-  border-bottom: 2px solid #ffd700; /* Customize the underline with border-bottom */
+  border-bottom: 2px solid orangered; /* Customize the underline with border-bottom */
   padding-bottom: 5px; /* Add padding to create space between text and underline */
 }
 .about-content p {
@@ -430,7 +430,7 @@ span {
 .new-section {
   padding: 50px 0;
   text-align: center;
-  background-color: #fff; /* White background */
+  background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   border-radius: 12px; /* Rounded corners */
 }
@@ -618,7 +618,6 @@ span {
   color: #fff; /* Set the color to white, or any color you prefer */
   text-shadow: 2px 2px 4px #000; /* Optional: Add a text shadow for a more dramatic effect */
   display: inline-block; /* Makes the width of the element fit its content */
-  border-bottom: 2px solid #ffd700; /* Customize the underline with border-bottom */
   padding-bottom: 5px; /* Add padding to create space between text and underline */
   margin-bottom: 0; /* Ensure no margin at the bottom */
 }
@@ -650,4 +649,11 @@ span {
   height: auto; /* Maintain the aspect ratio */
   border-radius: 8px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+}
+.new-section h2 {
+  font-family: "Courier New", Courier, monospace;
+  color: orangered;
+}
+.video-carousel-section h2 {
+  border-bottom: 2px solid orangered; /* Customize the underline with border-bottom */
 }
