@@ -657,34 +657,3 @@ span {
 .video-carousel-section h2 {
   border-bottom: 2px solid orangered; /* Customize the underline with border-bottom */
 }
-.video-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.video-content {
-  flex: 1;
-  padding: 20px;
-}
-
-.video-thumbnail {
-  flex: 1;
-  padding: 20px;
-}
-
-.video-thumbnail img {
-  max-width: 100%;
-  height: auto;
-}
-
-.video-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.video-content p {
-  font-size: 16px;
-  line-height: 1.6;
-}
