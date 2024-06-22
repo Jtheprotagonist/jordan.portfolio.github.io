@@ -657,3 +657,54 @@ span {
 .video-carousel-section h2 {
   border-bottom: 2px solid orangered; /* Customize the underline with border-bottom */
 }
+/* style.css */
+.icon-container {
+  display: flex;
+  gap: 8px; /* Adjust spacing between icons */
+}
+
+.fa-brands {
+  font-size: 2.5rem; /* Decrease the font size */
+  transition: transform 0.3s ease;
+  padding: 0.4em; /* Decrease padding */
+  border: 2px solid transparent;
+  border-radius: 8px; /* Decrease border radius */
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.fa-brands.fa-html5 {
+  color: #e34f26; /* HTML5 orange */
+}
+
+.fa-brands.fa-css3-alt {
+  color: #1572b6; /* CSS3 blue */
+}
+
+.fa-brands.fa-js {
+  color: #f0db4f; /* JavaScript yellow */
+}
+
+.fa-brands.fa-react {
+  color: #61dafb; /* React blue */
+}
+
+.fa-brands.fa-node-js {
+  color: #68a063; /* Node.js green */
+}
+
+.fa-brands:hover {
+  transform: scale(1.1); /* Scale up slightly on hover */
+  border-color: #333; /* Darken border on hover */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Adjust scale during animation */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
