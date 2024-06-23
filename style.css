@@ -717,3 +717,107 @@ span {
 .screenshot img[src="img/to-do-list.png"] {
   padding-top: 15px;
 }
+/* Basic styling for the navigation bar */
+nav {
+  background: orangered;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: fixed; /* Fixes the nav bar at the top */
+  width: 100%; /* Full width */
+  top: 0;
+  z-index: 1000; /* Ensures the nav bar is always on top */
+  padding: 10px 0;
+}
+
+/* Container for navigation links */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual navigation link items */
+nav ul li {
+  margin: 0 20px; /* Space between links */
+}
+
+/* Basic styling for the navigation bar */
+nav {
+  background: orangered;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: fixed; /* Fixes the nav bar at the top */
+  width: 100%; /* Full width */
+  top: 0;
+  z-index: 1000; /* Ensures the nav bar is always on top */
+  padding: 5px 0; /* Reduce padding to make nav bar shorter */
+}
+
+/* Container for navigation links */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual navigation link items */
+nav ul li {
+  margin: 0 20px; /* Space between links */
+}
+
+/* Navigation links */
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-family: "Press Start 2P", cursive; /* Consistent with the rest of the site */
+  transition: background 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Semi-transparent background on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Active link styling */
+nav ul li a.active {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* Semi-transparent background for active link */
+}
+
+/* Responsive navigation bar for smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack links vertically */
+  }
+  nav ul li {
+    margin: 10px 0; /* Space between links vertically */
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add top padding to the first section to avoid being hidden under the fixed nav bar */
+.home {
+  padding-top: 60px; /* Adjust this value according to your nav bar height */
+}
