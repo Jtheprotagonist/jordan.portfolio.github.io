@@ -708,3 +708,12 @@ span {
     transform: scale(1);
   }
 }
+/* Target and style specific Font Awesome 6 icons within .screenshots */
+.screenshot .fa-brands.fa-html5,
+.screenshot .fa-brands.fa-css3-alt,
+.screenshot .fa-brands.fa-js {
+  font-size: 25px; /* Adjust the size as needed */
+}
+.screenshot img[src="img/to-do-list.png"] {
+  padding-top: 15px;
+}
