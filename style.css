@@ -799,3 +799,18 @@ html {
 .home {
   padding-top: 60px; /* Adjust this value according to your nav bar height */
 }
+@media only screen and (max-width: 768px) {
+  .home {
+    width: 100%;
+    padding-top: 50%;
+  }
+  .about {
+    width: 155%;
+  }
+  .new-section {
+    width: 150%;
+  }
+  .video-carousel-section {
+    width: 155%;
+  }
+}
