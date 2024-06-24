@@ -719,33 +719,11 @@ span {
 }
 /* Basic styling for the navigation bar */
 nav {
-  background: orangered;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  position: fixed; /* Fixes the nav bar at the top */
-  width: 100%; /* Full width */
-  top: 0;
-  z-index: 1000; /* Ensures the nav bar is always on top */
-  padding: 10px 0;
-}
-
-/* Container for navigation links */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Individual navigation link items */
-nav ul li {
-  margin: 0 20px; /* Space between links */
-}
-
-/* Basic styling for the navigation bar */
-nav {
-  background: orangered;
+  background: linear-gradient(
+    to right,
+    #ff7e5f,
+    #feb47b
+  ); /* Gradient background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   position: fixed; /* Fixes the nav bar at the top */
   width: 100%; /* Full width */
