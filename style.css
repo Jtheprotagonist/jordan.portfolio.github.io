@@ -92,15 +92,16 @@ span {
 }
 .btn-1 {
   padding: 15px 28px;
-  background-color: black;
+  background-color: orangered;
   color: white;
   border: 2px solid transparent;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 1px;
   font-weight: 600;
   transition: 0.3s ease;
   cursor: pointer;
+  font-family: "Press Start 2P", cursive;
 }
 .btn-1:hover {
   background-color: white;
@@ -813,4 +814,9 @@ html {
   .video-carousel-section {
     width: 155%;
   }
+}
+.btn-box {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  padding-bottom: 10px;
 }
