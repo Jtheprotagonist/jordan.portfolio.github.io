@@ -695,6 +695,10 @@ html {
 }
 /* Media query for smartphones (375px width) and smaller */
 @media only screen and (max-width: 375px) {
+  .home {
+    width: 320%; /* Adjust width to span across the screen */
+  }
+
   .home-content {
     padding: 20px 5%; /* Adjust padding for smaller screens */
     text-align: center; /* Center align text content */
