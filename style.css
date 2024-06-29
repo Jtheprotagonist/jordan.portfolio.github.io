@@ -729,3 +729,34 @@ html {
   justify-content: center; /* Center horizontally */
   padding-bottom: 10px;
 }
+@media (max-width: 375px) {
+  /* CSS rules specific to 375px width screens */
+
+  /* Example adjustments */
+  .home {
+    padding-top: 70%; /* Adjust padding or margins */
+  }
+
+  .about:before {
+    height: 60%; /* Match the height of your navigation bar */
+  }
+
+  /* Adjust font sizes for smaller screens */
+  .home-content h3 {
+    font-size: 24%;
+  }
+
+  /* Stack navigation links vertically */
+  nav ul {
+    flex-direction: column;
+  }
+  .about {
+    width: 320%;
+  }
+  .new-section {
+    width: 320%;
+  }
+  .video-carousel-section {
+    width: 320%;
+  }
+}
