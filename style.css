@@ -765,3 +765,34 @@ html {
     width: 320%;
   }
 }
+@media (max-width: 414px) {
+  /* CSS rules specific to 375px width screens */
+
+  /* Example adjustments */
+  .home {
+    padding-top: 70%; /* Adjust padding or margins */
+  }
+
+  .about:before {
+    height: 60%; /* Match the height of your navigation bar */
+  }
+
+  /* Adjust font sizes for smaller screens */
+  .home-content h3 {
+    font-size: 24%;
+  }
+
+  /* Stack navigation links vertically */
+  nav ul {
+    flex-direction: column;
+  }
+  .about {
+    width: 320%;
+  }
+  .new-section {
+    width: 320%;
+  }
+  .video-carousel-section {
+    width: 320%;
+  }
+}
