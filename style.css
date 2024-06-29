@@ -695,20 +695,22 @@ html {
 }
 /* Media query for smartphones (375px width) and smaller */
 @media only screen and (max-width: 375px) {
-  .header {
+  .home-content {
     padding: 20px 5%; /* Adjust padding for smaller screens */
-    font-size: 16px; /* Adjust font sizes */
+    text-align: center; /* Center align text content */
   }
 
   .home-content h1 {
     font-size: 28px; /* Adjust heading sizes */
+    line-height: 1.3; /* Adjust line height for readability */
   }
 
   .btn-box {
     width: 100%; /* Make button container full width */
     display: flex;
     flex-direction: column; /* Stack buttons vertically */
-    gap: 1em; /* Adjust gap between buttons */
+    align-items: center; /* Center align items horizontally */
+    gap: 10px; /* Adjust gap between buttons */
   }
 
   .btn-1,
@@ -717,8 +719,24 @@ html {
     font-size: 14px; /* Adjust button font size */
   }
 
+  .img-box {
+    text-align: center; /* Center align images */
+  }
+
   .img-box img {
-    width: 100%; /* Make images responsive */
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto; /* Ensure proportional scaling */
+    display: block; /* Prevent extra space below inline images */
+    margin: 0 auto; /* Center align images */
+  }
+  .about {
+    width: 320%;
+  }
+  .new-section {
+    width: 320%;
+  }
+  .video-carousel-section {
+    width: 320%;
   }
 
   /* Adjust other elements as needed */
