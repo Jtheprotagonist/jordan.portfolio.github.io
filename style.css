@@ -1,62 +1,97 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
-  text-decoration: none;
+.logo,
+.navbar a {
+  color: #fff;
+  transition: 0.3s;
+}
+.header,
+.home {
+  width: 100%;
+  display: flex;
+}
+*,
+.new-section,
+.screenshot {
   list-style: none;
 }
-.header {
+.home-content,
+.screenshots {
+  max-width: 800px;
+}
+*,
+.carousel-item {
+  box-sizing: border-box;
+}
+.logo,
+.screenshot .fa-brands.fa-css3-alt,
+.screenshot .fa-brands.fa-html5,
+.screenshot .fa-brands.fa-js {
+  font-size: 25px;
+}
+.header,
+nav {
   position: fixed;
   top: 0;
+}
+*,
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+.navbar a,
+nav ul li {
+  margin: 0 20px;
+}
+* {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+}
+.header {
   left: 0;
-  width: 100%;
   padding: 35px 12%;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
-  display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
 .logo {
-  font-size: 25px;
-  color: white;
   font-weight: 600;
-  transition: 0.3s ease;
+}
+.highlight,
+.logo:hover,
+span {
+  color: #ff4500;
 }
 .logo:hover {
-  color: orangered;
-  text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+  text-shadow: 0 0 25px #ff4500, 0 0 50px #ff4500;
   transform: scale(1.1);
-}
-span {
-  color: orangered;
 }
 .navbar a {
   font-size: 18px;
-  color: white;
   font-weight: 500;
-  margin: 0 20px;
   border-bottom: 3px solid transparent;
-  transition: 0.3s ease;
 }
-.navbar a:hover,
-.navbar a.active {
-  color: orangered;
-  border-bottom: 3px solid orangered;
+.navbar a.active,
+.navbar a:hover {
+  color: #ff4500;
+  border-bottom: 3px solid #ff4500;
 }
 .home {
-  width: 100%;
   min-height: 100vh;
-  background: rgb(241, 241, 241);
-  display: flex;
+  background: #f1f1f1;
   align-items: center;
   gap: 3em;
   padding: 30px 12% 0;
 }
-.home-content {
-  max-width: 800px;
+.btn-1,
+.btn-2 {
+  padding: 15px 28px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s;
+  background-color: #ff4500;
+  cursor: pointer;
 }
 .home-content h3 {
   font-size: 42px;
@@ -75,126 +110,125 @@ span {
   gap: 2em;
 }
 .btn-1 {
-  padding: 15px 28px;
-  background-color: orangered;
-  color: white;
   border: 2px solid transparent;
   border-radius: 8px;
   font-size: 15px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  transition: 0.3s ease;
-  cursor: pointer;
   font-family: "Press Start 2P", cursive;
 }
+.btn-1:hover,
+.btn-2 {
+  border: 2px solid #000;
+}
 .btn-1:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
+  background-color: #fff;
+  color: #000;
 }
 .btn-2 {
-  padding: 15px 28px;
-  background-color: orangered;
-  color: white;
-  border: 2px solid black;
   border-radius: 8px;
   font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  transition: 0.3s ease;
-  cursor: pointer;
+}
+.about-img img,
+.img-box img {
+  width: 550px;
+  border-radius: 50%;
+}
+.about-content h2,
+.arrow-text,
+.scroll-text {
+  font-size: 24px;
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+}
+.screenshot,
+.screenshot img,
+.side-image,
+.side-image-container {
+  transition: transform 0.3s;
 }
 .btn-2:hover {
-  background-color: white;
-  color: orangered;
-}
-.img-box img {
-  border-radius: 50%;
-  width: 550px;
+  background-color: #fff;
+  color: #ff4500;
 }
 ::-webkit-scrollbar {
   width: 15px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: orangered;
+  background-color: #ff4500;
 }
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.6);
   width: 50px;
 }
-
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12% 8%;
   gap: 10em;
-  background: black;
+  background: #000;
+}
+.new-section,
+.screenshot {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .about-img img {
   position: relative;
-  width: 550px;
-  box-shadow: 0 0 25px orangered, 0 0 50px orangered;
-  border-radius: 50%;
+  box-shadow: 0 0 25px #ff4500, 0 0 50px #ff4500;
 }
 .about-content h2 {
-  font-family: "Press Start 2P", cursive;
-  font-size: 24px; /* Adjust the font size as needed */
-  color: #fff; /* Set the color to white, or any color you prefer */
-  text-shadow: 2px 2px 4px #000; /* Optional: Add a text shadow for a more dramatic effect */
+  text-shadow: 2px 2px 4px #000;
   position: inherit;
   padding-left: 70px;
-  border-bottom: 2px solid orangered; /* Customize the underline with border-bottom */
-  padding-bottom: 5px; /* Add padding to create space between text and underline */
+  border-bottom: 2px solid #ff4500;
+  padding-bottom: 5px;
 }
 .about-content p {
-  color: white;
+  color: #fff;
   font-size: 20px;
   margin: 2em 0 3em;
   font-family: "Freckle Face", cursive;
-  font-weight: bold; /* Make the text bold */
-  border: 3px solid #ffd700; /* Add a gold border */
-  padding: 10px; /* Add some padding */
-  border-radius: 10px; /* Round the corners */
-  background-color: orangered; /* Add a vibrant background color */
+  font-weight: 700;
+  border: 3px solid gold;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ff4500;
 }
 .home .home-content p {
   font-size: 22px;
-  color: black;
+  color: #000;
   text-decoration: underline;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: oblique;
 }
-.styled-video {
-  position: relative; /* Position relative to its normal position */
-  width: 350px; /* Adjust the width as needed */
-  border-radius: 25px; /* Adjust the value to achieve desired rounding */
-  margin: 20px auto; /* Center the video horizontally with auto margins */
-  top: 10px; /* Move the video 10px down */
-  left: 50px; /* Move the video 50px to the right */
-  border: 3px solid black; /* Black border */
-  margin-top: -30px; /* Move the video slightly upward */
+.new-section,
+.screenshot,
+nav ul li a {
+  text-decoration: none;
 }
+.styled-video {
+  position: relative;
+  width: 350px;
+  border-radius: 25px;
+  margin: -30px auto 20px;
+  top: 10px;
+  left: 50px;
+  border: 3px solid #000;
+}
+.arrow-text,
 .scroll-text {
   text-align: center;
-  font-size: 24px;
-  color: white;
   margin-top: 20px;
-  animation: blink 1s infinite;
-  font-family: "Press Start 2P", cursive;
+  animation: 1s infinite blink;
 }
-
-.arrow-text {
-  text-align: center;
-  font-size: 24px;
-  color: white;
-  margin-top: 20px;
-  animation: blink 1s infinite;
-  font-family: "Press Start 2P", cursive;
+.new-section,
+.screenshot,
+.screenshot p {
+  font-family: "Courier New", Courier, monospace;
 }
-
 @keyframes blink {
   0%,
   100% {
@@ -205,302 +239,140 @@ span {
   }
 }
 .img-box {
-  margin-right: 25px; /* Adjust the value as needed */
+  margin-right: 25px;
 }
-.new-section {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.new-section h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
 .screenshots {
   display: flex;
   justify-content: space-between;
-  gap: 20px; /* Adjust the gap between screenshots */
 }
-
 .screenshot {
   flex: 1;
-  max-width: 300px; /* Adjust the maximum width of each screenshot */
-  text-align: center;
-}
-
-.screenshot img {
-  width: 100%;
-  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
-}
-
-.screenshot p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #666; /* Adjust caption text color */
 }
 .new-section {
   padding: 50px 0;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  text-decoration: none;
-  list-style: none;
+  border-radius: 12px;
 }
-
-.new-section h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  color: #333; /* Darker text color */
-}
-
 .content-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px; /* Adjust gap between screenshots and side image */
 }
-
-.screenshots-container {
-  display: flex;
-  flex-direction: column; /* Stack screenshots and side image vertically */
-  align-items: center; /* Center items horizontally */
-  gap: 30px; /* Adjust gap between screenshots and side image container */
-}
-
 .screenshots {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Adjust gap between screenshots */
-  max-width: 600px; /* Limit width of screenshots */
 }
-
 .screenshot {
   flex: 1;
-  max-width: 400px; /* Increase maximum width of each screenshot */
-  text-align: center;
-  border-radius: 12px; /* Rounded corners for screenshots */
-  overflow: hidden; /* Ensure content does not overflow rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease; /* Smooth transition on hover */
-  font-family: "Courier New", Courier, monospace;
-  text-decoration: none;
-  list-style: none;
 }
-
-.screenshot:hover {
-  transform: translateY(-5px); /* Lift screenshot on hover */
-}
-
 .screenshot img {
+  max-height: 250px;
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  max-height: 250px; /* Increase maximum height of screenshots */
-  border-radius: 12px; /* Rounded corners for images inside screenshots */
-  transition: transform 0.3s ease; /* Smooth transition on hover */
+  height: auto;
+  border-radius: 12px;
 }
-
-.screenshot:hover img {
-  transform: scale(1.05); /* Scale image on hover */
-}
-.side-image-container {
-  width: 300px; /* Fixed width for side image */
-  border-radius: 12px; /* Rounded corners for side image container */
-  overflow: hidden; /* Ensure content does not overflow rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease; /* Smooth transition on hover */
-}
-
-.side-image-container:hover {
-  transform: translateY(-5px); /* Lift side image container on hover */
-}
-
-.side-image {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  max-height: 300px; /* Limit maximum height of side image */
-  border-radius: 12px; /* Rounded corners for side image */
-  transition: transform 0.3s ease; /* Smooth transition on hover */
-}
-
-.side-image:hover {
-  transform: scale(1.05); /* Scale side image on hover */
-}
-#anime-quiz {
-  font-size: 20px; /* Example style */
-  color: orangered; /* Example style */
-}
-#weather-app {
-  font-size: 20px; /* Example style */
-  color: orangered; /* Example style */
-}
-#to-do {
-  font-size: 20px; /* Example style */
-}
-/* Section Styling */
-.new-section {
-  padding: 50px 0;
-  text-align: center;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  border-radius: 12px; /* Rounded corners */
-}
-
-/* Heading Styling */
 .new-section h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  color: #333; /* Darker text color */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
-
-.highlight {
-  color: orangered; /* Highlight color */
-}
-
-/* Content Container */
 .content-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align items at the top */
-  gap: 50px; /* Gap between screenshots and side image */
+  align-items: flex-start;
+  gap: 50px;
 }
-
-/* Screenshots Container */
 .screenshots-container {
   display: flex;
-  flex-direction: column; /* Stack screenshots and side image vertically */
-  align-items: center; /* Center items horizontally */
-  gap: 30px; /* Gap between screenshots and side image container */
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
-
-/* Screenshots */
 .screenshots {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Gap between screenshots */
-  max-width: 800px; /* Limit width of screenshots */
+  gap: 20px;
 }
-
 .screenshot {
   flex: 1;
-  max-width: 300px; /* Maximum width of each screenshot */
-  text-align: center;
-  border-radius: 12px; /* Rounded corners for screenshots */
-  overflow: hidden; /* Ensure content does not overflow rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease; /* Smooth transition on hover */
-  background-color: #fff; /* White background */
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
 }
-
-.screenshot:hover {
-  transform: translateY(-5px); /* Lift screenshot on hover */
+.screenshot:hover,
+.side-image-container:hover {
+  transform: translateY(-5px);
 }
-
-.screenshot img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 12px; /* Rounded corners for images inside screenshots */
-  transition: transform 0.3s ease; /* Smooth transition on hover */
+.screenshot:hover img,
+.side-image:hover {
+  transform: scale(1.05);
 }
-
-.screenshot:hover img {
-  transform: scale(1.05); /* Scale image on hover */
-}
-
-/* Screenshot Captions */
 .screenshot p {
   margin-top: 10px;
   font-size: 16px;
-  color: #666; /* Caption text color */
-  font-family: "Courier New", Courier, monospace;
+  color: #666;
 }
-
-/* Side Image Container */
+.video-carousel-section h2,
+nav ul li a {
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+}
 .side-image-container {
-  width: 300px; /* Fixed width for side image */
-  border-radius: 12px; /* Rounded corners for side image container */
-  overflow: hidden; /* Ensure content does not overflow rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease; /* Smooth transition on hover */
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.side-image-container:hover {
-  transform: translateY(-5px); /* Lift side image container on hover */
-}
-
 .side-image {
+  max-height: 300px;
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 100px; /* Rounded corners for side image */
-  transition: transform 0.3s ease; /* Smooth transition on hover */
+  height: auto;
+  border-radius: 100px;
 }
-
-.side-image:hover {
-  transform: scale(1.05); /* Scale side image on hover */
-}
-
-/* Custom Styles for Specific Captions */
 #anime-quiz,
-#weather-app,
-#to-do {
-  font-size: 18px; /* Increased font size */
-  font-weight: bold; /* Bold text */
-  color: #444; /* Darker caption color */
-  background-color: #f9f9f9; /* Light background color */
-  padding: 5px 10px; /* Padding around text */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+#to-do,
+#weather-app {
+  font-size: 18px;
+  font-weight: 700;
+  color: #444;
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Add Hover Effect to Captions */
 #anime-quiz:hover,
-#weather-app:hover,
-#to-do:hover {
-  color: orangered; /* Change color on hover */
-  background-color: #fff0e0; /* Light orange background on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase shadow on hover */
+#to-do:hover,
+#weather-app:hover {
+  color: #ff4500;
+  background-color: #fff0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .video-carousel-section {
   padding: 50px 0;
   text-align: center;
-  background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   margin: 50px 0;
 }
-
-.video-carousel-section h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  color: #333;
-}
-
 .carousel-container {
   position: relative;
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
-
 .carousel {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s;
 }
-
 .carousel-item {
   min-width: 100%;
-  box-sizing: border-box;
   padding: 20px;
 }
-
 .carousel-item video {
   width: 100%;
   border-radius: 12px;
 }
-
-.carousel-prev,
-.carousel-next {
+.carousel-next,
+.carousel-prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -511,11 +383,9 @@ span {
   cursor: pointer;
   border-radius: 50%;
 }
-
 .carousel-prev {
   left: 10px;
 }
-
 .carousel-next {
   right: 10px;
 }
@@ -523,223 +393,150 @@ span {
   background-color: #000;
 }
 .video-carousel-section h2 {
-  font-family: "Press Start 2P", cursive;
-  font-size: 24px; /* Adjust the font size as needed */
-  color: #fff; /* Set the color to white, or any color you prefer */
-  text-shadow: 2px 2px 4px #000; /* Optional: Add a text shadow for a more dramatic effect */
-  display: inline-block; /* Makes the width of the element fit its content */
-  padding-bottom: 5px; /* Add padding to create space between text and underline */
-  margin-bottom: 0; /* Ensure no margin at the bottom */
+  font-size: 24px;
+  text-shadow: 2px 2px 4px #000;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  border-bottom: 2px solid #ff4500;
 }
 .link-photo-section {
-  padding: 20px; /* Add some padding to the section */
-  background-color: #f9f9f9; /* Optional: Add a background color */
+  padding: 20px;
+  background-color: #f9f9f9;
 }
-
 .link-photo-section .container {
-  display: flex; /* Use flexbox to arrange items horizontally */
-  align-items: center; /* Vertically center the items */
-  justify-content: center; /* Center the items horizontally */
-  gap: 20px; /* Add space between the link and the photo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-
 .link-photo-section .link-container a {
   font-family: "Press Start 2P", cursive;
-  font-size: 18px; /* Adjust the font size as needed */
-  color: #007bff; /* Set the link color */
-  text-decoration: none; /* Remove the underline from the link */
-  transition: color 0.3s; /* Add a transition effect for color change */
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
-
 .link-photo-section .link-container a:hover {
-  color: #0056b3; /* Change the color on hover */
+  color: #0056b3;
 }
 .link-photo-section .photo-container img {
-  width: 150px; /* Set the width of the photo */
-  height: auto; /* Maintain the aspect ratio */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .new-section h2 {
   font-family: "Courier New", Courier, monospace;
-  color: orangered;
+  color: #ff4500;
 }
-.video-carousel-section h2 {
-  border-bottom: 2px solid orangered; /* Customize the underline with border-bottom */
-}
-/* style.css */
 .icon-container {
   display: flex;
-  gap: 8px; /* Adjust spacing between icons */
+  gap: 8px;
 }
-
 .fa-brands {
-  font-size: 2.5rem; /* Decrease the font size */
-  transition: transform 0.3s ease;
-  padding: 0.4em; /* Decrease padding */
+  font-size: 2.5rem;
+  transition: transform 0.3s;
+  padding: 0.4em;
   border: 2px solid transparent;
-  border-radius: 8px; /* Decrease border radius */
-  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 8px;
+  background-color: #f0f0f0;
 }
-
 .fa-brands.fa-html5 {
-  color: #e34f26; /* HTML5 orange */
+  color: #e34f26;
 }
-
 .fa-brands.fa-css3-alt {
-  color: #1572b6; /* CSS3 blue */
+  color: #1572b6;
 }
-
 .fa-brands.fa-js {
-  color: #f0db4f; /* JavaScript yellow */
+  color: #f0db4f;
 }
-
 .fa-brands.fa-react {
-  color: #61dafb; /* React blue */
+  color: #61dafb;
 }
-
 .fa-brands.fa-node-js {
-  color: #68a063; /* Node.js green */
+  color: #68a063;
 }
-
 .fa-brands:hover {
-  transform: scale(1.1); /* Scale up slightly on hover */
-  border-color: #333; /* Darken border on hover */
+  transform: scale(1.1);
+  border-color: #333;
 }
-
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05); /* Adjust scale during animation */
-  }
+  0%,
   100% {
     transform: scale(1);
   }
-}
-/* Target and style specific Font Awesome 6 icons within .screenshots */
-.screenshot .fa-brands.fa-html5,
-.screenshot .fa-brands.fa-css3-alt,
-.screenshot .fa-brands.fa-js {
-  font-size: 25px; /* Adjust the size as needed */
+  50% {
+    transform: scale(1.05);
+  }
 }
 .screenshot img[src="img/to-do-list.png"] {
   padding-top: 15px;
 }
-/* Basic styling for the navigation bar */
 nav {
-  background: linear-gradient(
-    to right,
-    #ff7e5f,
-    #feb47b
-  ); /* Gradient background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  position: fixed; /* Fixes the nav bar at the top */
-  width: 100%; /* Full width */
-  top: 0;
-  z-index: 1000; /* Ensures the nav bar is always on top */
-  padding: 5px 0; /* Reduce padding to make nav bar shorter */
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1000;
+  padding: 5px 0;
 }
-
-/* Container for navigation links */
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* Individual navigation link items */
-nav ul li {
-  margin: 0 20px; /* Space between links */
-}
-
-/* Navigation links */
 nav ul li a {
   display: block;
-  color: white;
   text-align: center;
   padding: 10px 15px;
-  text-decoration: none;
-  font-family: "Press Start 2P", cursive; /* Consistent with the rest of the site */
-  transition: background 0.3s, transform 0.3s; /* Smooth transition for hover effects */
-  border-radius: 5px; /* Rounded corners */
+  transition: background 0.3s, transform 0.3s;
+  border-radius: 5px;
 }
-
-/* Hover effect for navigation links */
 nav ul li a:hover {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* Semi-transparent background on hover */
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
-
-/* Active link styling */
 nav ul li a.active {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.4
-  ); /* Semi-transparent background for active link */
+  background-color: rgba(255, 255, 255, 0.4);
 }
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
-/* Media query for smartphones (375px width) and smaller */
 @media only screen and (max-width: 375px) {
-  .home {
-    width: 320%; /* Adjust width to span across the screen */
-  }
-
-  .home-content {
-    padding: 20px 5%; /* Adjust padding for smaller screens */
-    text-align: center; /* Center align text content */
-  }
-
-  .home-content h1 {
-    font-size: 28px; /* Adjust heading sizes */
-    line-height: 1.3; /* Adjust line height for readability */
-  }
-
-  .btn-box {
-    width: 100%; /* Make button container full width */
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center align items horizontally */
-    gap: 10px; /* Adjust gap between buttons */
-  }
-
-  .btn-1,
-  .btn-2 {
-    padding: 12px 20px; /* Adjust button padding */
-    font-size: 14px; /* Adjust button font size */
-  }
-
+  .home-content,
   .img-box {
-    text-align: center; /* Center align images */
+    text-align: center;
   }
-
-  .img-box img {
-    max-width: 100%; /* Ensure images don't overflow their containers */
-    height: auto; /* Ensure proportional scaling */
-    display: block; /* Prevent extra space below inline images */
-    margin: 0 auto; /* Center align images */
-  }
-  .about {
-    width: 320%;
-  }
-  .new-section {
-    width: 320%;
-  }
+  .about,
+  .home,
+  .new-section,
   .video-carousel-section {
     width: 320%;
+  }
+  .home-content {
+    padding: 20px 5%;
+  }
+  .home-content h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  .btn-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-1,
+  .btn-2 {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .img-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
