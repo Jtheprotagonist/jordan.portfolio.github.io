@@ -737,32 +737,35 @@ html {
 @media (max-width: 375px) {
   /* Adjust padding for the home section */
   .home {
-    padding-top: 60px; /* Adjust this value according to your navbar height */
+    padding-top: 80px; /* Adjust this value according to your navbar height */
   }
 
   /* Adjust height of pseudo-element to match navbar height */
   .about:before {
     content: "";
     display: block;
-    height: 60px; /* Match the height of your navigation bar */
+    height: 80px; /* Match the height of your navigation bar */
   }
 
   /* Adjust font sizes for smaller screens */
   .home-content h3 {
-    font-size: 18px; /* Adjust font size as needed */
+    font-size: 16px; /* Adjust font size as needed */
   }
 
   /* Stack navigation links vertically */
   nav ul {
     flex-direction: column; /* Stack links vertically */
+    padding-top: 80px; /* Adjust top padding to create space for the navbar */
   }
 
   /* Adjust width of sections to fit the screen */
   .about,
   .new-section,
   .video-carousel-section {
-    width: 310%; /* Adjust width to fill the screen */
-    max-width: 310%; /* Ensure elements do not overflow */
+    width: 100%; /* Adjust width to fill the screen */
+    max-width: 100%; /* Ensure elements do not overflow */
     box-sizing: border-box; /* Include padding and border in element's total width */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
