@@ -689,176 +689,37 @@ nav ul li a.active {
     0.4
   ); /* Semi-transparent background for active link */
 }
-
-/* Responsive navigation bar for smaller screens */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column; /* Stack links vertically */
-  }
-  nav ul li {
-    margin: 10px 0; /* Space between links vertically */
-  }
-}
-
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
-
-/* Add top padding to the first section to avoid being hidden under the fixed nav bar */
-.home {
-  padding-top: 60px; /* Adjust this value according to your nav bar height */
-}
-@media only screen and (max-width: 768px) {
-  .home {
-    width: 100%;
-    padding-top: 30%;
-  }
-  .about {
-    width: 220%;
-  }
-  .new-section {
-    width: 220%;
-  }
-  .video-carousel-section {
-    width: 220%;
-  }
-  .styled-video {
-    padding-left: 25%;
-    width: 100%;
-    padding-right: 35%;
-  }
-}
-.btn-box {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  padding-bottom: 10px;
-}
-@media (max-width: 375px) {
-  /* CSS rules specific to 375px width screens */
-
-  /* Example adjustments */
-  .home {
-    padding-top: 70%; /* Adjust padding or margins */
+/* Media query for smartphones (375px width) and smaller */
+@media only screen and (max-width: 375px) {
+  .header {
+    padding: 20px 5%; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Adjust font sizes */
   }
 
-  .about:before {
-    height: 60%; /* Match the height of your navigation bar */
+  .home-content h1 {
+    font-size: 28px; /* Adjust heading sizes */
   }
 
-  /* Adjust font sizes for smaller screens */
-  .home-content h3 {
-    font-size: 24%;
+  .btn-box {
+    width: 100%; /* Make button container full width */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1em; /* Adjust gap between buttons */
   }
 
-  /* Stack navigation links vertically */
-  nav ul {
-    flex-direction: column;
-  }
-  .about {
-    width: 320%;
-  }
-  .new-section {
-    width: 320%;
-  }
-  .video-carousel-section {
-    width: 320%;
-  }
-}
-@media (max-width: 414px) {
-  /* CSS rules specific to 375px width screens */
-
-  /* Example adjustments */
-  .home {
-    padding-top: 70%; /* Adjust padding or margins */
+  .btn-1,
+  .btn-2 {
+    padding: 12px 20px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
   }
 
-  .about:before {
-    height: 60%; /* Match the height of your navigation bar */
+  .img-box img {
+    width: 100%; /* Make images responsive */
   }
 
-  /* Adjust font sizes for smaller screens */
-  .home-content h3 {
-    font-size: 24%;
-  }
-
-  /* Stack navigation links vertically */
-  nav ul {
-    flex-direction: column;
-  }
-  .about {
-    width: 320%;
-  }
-  .new-section {
-    width: 320%;
-  }
-  .video-carousel-section {
-    width: 320%;
-  }
-}
-@media (max-width: 430px) {
-  /* CSS rules specific to 375px width screens */
-
-  /* Example adjustments */
-  .home {
-    padding-top: 70%; /* Adjust padding or margins */
-  }
-
-  .about:before {
-    height: 60%; /* Match the height of your navigation bar */
-  }
-
-  /* Adjust font sizes for smaller screens */
-  .home-content h3 {
-    font-size: 24%;
-  }
-
-  /* Stack navigation links vertically */
-  nav ul {
-    flex-direction: column;
-  }
-  .about {
-    width: 320%;
-  }
-  .new-section {
-    width: 320%;
-  }
-  .video-carousel-section {
-    width: 320%;
-  }
-}
-@media (max-width: 820px) {
-  /* CSS rules specific to screens up to 820px width */
-
-  /* Example adjustments */
-  .home {
-    padding-top: 80px; /* Adjust padding or margins */
-  }
-
-  .about:before {
-    height: 80px; /* Match the height of your navigation bar */
-  }
-
-  /* Adjust font sizes for smaller screens */
-  .home-content h3 {
-    font-size: 28px;
-  }
-
-  /* Stack navigation links vertically */
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 15px 0; /* Space between links vertically */
-  }
-  .about {
-    width: 150%;
-  }
-  .new-section {
-    width: 150%;
-  }
-  .video-carousel-section {
-    width: 150%;
-  }
+  /* Adjust other elements as needed */
 }
