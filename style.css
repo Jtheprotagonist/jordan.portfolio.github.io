@@ -540,3 +540,25 @@ html {
     margin: 0 auto;
   }
 }
+.new-section-2 h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding-top: 45px;
+}
+.new-section-2 .fa-react,
+.new-section-2 .fa-node-js {
+  font-size: 2em; /* Increase the icon size */
+  padding: 10px; /* Keeps padding around the icon */
+  background-color: #f0f0f0; /* Light gray background color */
+  border-radius: 50%; /* Makes the background color a circle */
+}
+
+.new-section-2 .fa-react {
+  color: #61dafb; /* React's official color */
+}
+
+.new-section-2 .fa-node-js {
+  color: #68a063; /* Node.js's official color */
+}
