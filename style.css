@@ -562,3 +562,18 @@ html {
 .new-section-2 .fa-node-js {
   color: #68a063; /* Node.js's official color */
 }
+#home .home-content p {
+  font-size: 14px; /* Slightly larger font for better readability */
+  color: orangered; /* Orangered text color */
+  margin-bottom: 20px; /* Space below the paragraph */
+  font-family: "Roboto", sans-serif;
+  text-align: justify; /* Justify text for neat alignment */
+  line-height: 1.8; /* Increase line spacing for readability */
+  letter-spacing: normal; /* Standard letter spacing */
+  padding: 10px 15px; /* Add padding for text cushioning */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-left: 4px solid orangered; /* Add a left border for emphasis */
+  border-radius: 5px; /* Subtle rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-decoration: none; /* Remove any underline */
+}
