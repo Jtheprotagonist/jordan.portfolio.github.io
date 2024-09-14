@@ -577,3 +577,94 @@ html {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   text-decoration: none; /* Remove any underline */
 }
+
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Container for the questions and answers */
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Styling for questions */
+.question {
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: #e0f7fa; /* Light cyan background for questions */
+}
+
+/* Styling for answers */
+.answer {
+  color: #fff; /* White text color for better contrast */
+  margin-left: 20px;
+  display: none; /* Hidden by default */
+  padding: 10px;
+  border: 1px solid #388e3c; /* Dark green border */
+  border-radius: 5px;
+  background-color: #388e3c; /* Dark green background */
+}
+
+/* Styling for the main heading */
+h1 {
+  font-size: 2em; /* Larger font size for emphasis */
+  color: #333; /* Dark gray color for text */
+  text-align: center; /* Center-align the text */
+  background-color: #e0f7fa; /* Light cyan background color */
+  padding: 20px; /* Add padding around the text */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  margin-bottom: 20px; /* Space below the heading */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  font-family: "Arial", sans-serif; /* Set the font family */
+}
+
+.styled-text {
+  font-size: 24px; /* same as h2 */
+  font-weight: bold; /* same as h2 */
+  color: #333; /* same as h2 */
+  margin-bottom: 20px; /* same as h2 */
+}
+
+#qanda h2 {
+  font-size: 1.5em; /* Slightly smaller than the h1 */
+  color: #555; /* Slightly lighter color for contrast */
+  text-align: center; /* Center-align the text */
+  background-color: #f0f9fc; /* Lighter background color */
+  padding: 15px; /* Slightly less padding than h1 */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 15px; /* Space below the h2 */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15); /* Softer shadow effect */
+  font-family: "Arial", sans-serif; /* Same font family */
+}
+
+.note {
+  background-color: #f5faff; /* Light blue background */
+  border-left: 6px solid #4ca3ff; /* Blue left border */
+  padding: 15px 20px; /* Spacing inside the note */
+  margin: 20px 0; /* Spacing around the note */
+  border-radius: 8px; /* Rounded corners */
+  font-family: "Arial", sans-serif; /* Clean font */
+  font-size: 16px; /* Readable font size */
+  line-height: 1.6; /* Better line spacing */
+  color: #333; /* Text color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.note strong {
+  color: #007bff; /* Highlight "Note" with blue */
+}
+
+.note:hover {
+  background-color: #e0f0ff; /* Slightly darker background on hover */
+}
