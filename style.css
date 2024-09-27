@@ -60,10 +60,10 @@ nav ul li {
 .highlight,
 .logo:hover,
 span {
-  color: #ff4500;
+  color: purple;
 }
 .logo:hover {
-  text-shadow: 0 0 25px #ff4500, 0 0 50px #ff4500;
+  text-shadow: 0 0 25px purple, 0 0 50px purple;
   transform: scale(1.1);
 }
 .navbar a {
@@ -73,8 +73,8 @@ span {
 }
 .navbar a.active,
 .navbar a:hover {
-  color: #ff4500;
-  border-bottom: 3px solid #ff4500;
+  color: purple;
+  border-bottom: 3px solid purple;
 }
 .home {
   min-height: 100vh;
@@ -90,7 +90,7 @@ span {
   letter-spacing: 1px;
   font-weight: 600;
   transition: 0.3s;
-  background-color: #ff4500;
+  background-color: purple;
   cursor: pointer;
 }
 .home-content h3 {
@@ -147,13 +147,13 @@ span {
 }
 .btn-2:hover {
   background-color: #fff;
-  color: #ff4500;
+  color: purple;
 }
 ::-webkit-scrollbar {
   width: 15px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ff4500;
+  background-color: purple;
 }
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.6);
@@ -175,13 +175,13 @@ span {
 }
 .about-img img {
   position: relative;
-  box-shadow: 0 0 25px #ff4500, 0 0 50px #ff4500;
+  box-shadow: 0 0 25px blue, 0 0 50px purple;
 }
 .about-content h2 {
   text-shadow: 2px 2px 4px #000;
   position: inherit;
   padding-left: 70px;
-  border-bottom: 2px solid #ff4500;
+  border-bottom: 2px solid purple;
   padding-bottom: 5px;
 }
 .about-content p {
@@ -190,10 +190,10 @@ span {
   margin: 2em 0 3em;
   font-family: "Freckle Face", cursive;
   font-weight: 700;
-  border: 3px solid gold;
+  border: 3px solid blue;
   padding: 10px;
   border-radius: 10px;
-  background-color: #ff4500;
+  background-color: purple;
 }
 .home .home-content p {
   font-size: 22px;
@@ -342,7 +342,7 @@ nav ul li a {
 #anime-quiz:hover,
 #to-do:hover,
 #weather-app:hover {
-  color: #ff4500;
+  color: purple;
   background-color: #fff0e0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -398,7 +398,7 @@ nav ul li a {
   display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 0;
-  border-bottom: 2px solid #ff4500;
+  border-bottom: 2px solid purple;
 }
 .link-photo-section {
   padding: 20px;
@@ -428,7 +428,6 @@ nav ul li a {
 }
 .new-section h2 {
   font-family: "Courier New", Courier, monospace;
-  color: #ff4500;
 }
 .icon-container {
   display: flex;
@@ -443,7 +442,7 @@ nav ul li a {
   background-color: #f0f0f0;
 }
 .fa-brands.fa-html5 {
-  color: #e34f26;
+  color: orangered;
 }
 .fa-brands.fa-css3-alt {
   color: #1572b6;
@@ -474,7 +473,7 @@ nav ul li a {
   padding-top: 15px;
 }
 nav {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(to right, purple, royalblue);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   z-index: 1000;
@@ -564,7 +563,7 @@ html {
 }
 #home .home-content p {
   font-size: 14px; /* Slightly larger font for better readability */
-  color: orangered; /* Orangered text color */
+  color: royalblue; /* Orangered text color */
   margin-bottom: 20px; /* Space below the paragraph */
   font-family: "Roboto", sans-serif;
   text-align: justify; /* Justify text for neat alignment */
@@ -572,7 +571,7 @@ html {
   letter-spacing: normal; /* Standard letter spacing */
   padding: 10px 15px; /* Add padding for text cushioning */
   background-color: #f9f9f9; /* Light background for contrast */
-  border-left: 4px solid orangered; /* Add a left border for emphasis */
+  border-left: 4px solid purple; /* Add a left border for emphasis */
   border-radius: 5px; /* Subtle rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   text-decoration: none; /* Remove any underline */
@@ -610,9 +609,9 @@ body {
   margin-left: 20px;
   display: none; /* Hidden by default */
   padding: 10px;
-  border: 1px solid #388e3c; /* Dark green border */
+  border: 1px solid royalblue; /* Dark green border */
   border-radius: 5px;
-  background-color: #388e3c; /* Dark green background */
+  background-color: royalblue; /* Dark green background */
 }
 
 /* Styling for the main heading */
@@ -667,4 +666,30 @@ h1 {
 
 .note:hover {
   background-color: #e0f0ff; /* Slightly darker background on hover */
+}
+
+#about .about-content p {
+  font-size: 14px; /* Slightly larger font for better readability */
+  color: royalblue;
+  margin-bottom: 20px; /* Space below the paragraph */
+  font-family: "Roboto", sans-serif;
+  text-align: justify; /* Justify text for neat alignment */
+  line-height: 1.8; /* Increase line spacing for readability */
+  letter-spacing: normal; /* Standard letter spacing */
+  padding: 10px 15px; /* Add padding for text cushioning */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-left: 4px solid purple; /* Add a left border for emphasis */
+  border-radius: 5px; /* Subtle rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-decoration: none; /* Remove any underline */
+  font-style: italic; /* Italicize the font */
+}
+
+.styled-video {
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px; /* Push the image down */
+  margin-left: -30px; /* Adjust this value as needed */
 }
