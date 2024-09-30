@@ -27,8 +27,13 @@
     />
   </head>
   <body>
-    <nav id="main-navbar">
-      <ul>
+    <nav class="navbar">
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Frontend Projects</a></li>
@@ -187,15 +192,10 @@
       </div>
     </section>
 
-    <section id="tutorial" class="video-carousel-section">
+    <section id="tutorial" class="video-section">
       <h2>Build A Quiz App With Me</h2>
-      <div class="carousel-container">
-        <div class="carousel">
-          <div class="carousel-item">
-            <video src="video/Quiz app tutorial.mp4" controls></video>
-            <!-- Add missing closing </video> tag -->
-          </div>
-        </div>
+      <div class="video-container">
+        <video src="video/Quiz app tutorial.mp4" controls></video>
       </div>
     </section>
 

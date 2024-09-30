@@ -1,34 +1,3 @@
-// Existing Carousel Code
-const carousel = document.querySelector(".carousel");
-const carouselItems = document.querySelectorAll(".carousel-item");
-const prevButton = document.querySelector(".carousel-prev");
-const nextButton = document.querySelector(".carousel-next");
-
-let currentIndex = 0;
-
-prevButton.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = carouselItems.length - 1;
-  }
-  updateCarousel();
-});
-
-nextButton.addEventListener("click", () => {
-  if (currentIndex < carouselItems.length - 1) {
-    currentIndex++;
-  } else {
-    currentIndex = 0;
-  }
-  updateCarousel();
-});
-
-function updateCarousel() {
-  const translateX = -currentIndex * 100;
-  carousel.style.transform = `translateX(${translateX}%)`;
-}
-
 // New toggleAnswer Code for New Section
 function toggleAnswer(questionNumber) {
   const answer = document.getElementById(`answer-${questionNumber}`);
@@ -40,3 +9,18 @@ function toggleAnswer(questionNumber) {
     answer.style.display = "none"; // Hide answer
   }
 }
+
+document
+  .getElementById("hamburger-menu")
+  .addEventListener("click", function () {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active"); // Toggle the 'active' class
+  });
+
+// JavaScript to handle the toggle functionality
+const hamburger = document.getElementById("hamburger-menu");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
