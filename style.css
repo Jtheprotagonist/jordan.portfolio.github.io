@@ -862,3 +862,18 @@ body {
     width: 100%; /* Make the button take full width */
   }
 }
+
+/* Media query for iPad Mini and similar sizes */
+@media (max-width: 1488px) {
+  #home,
+  #about {
+    padding: 20px; /* Adjust padding for smaller screens */
+    width: 100%; /* Ensure full width */
+  }
+
+  #home img,
+  #about img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
