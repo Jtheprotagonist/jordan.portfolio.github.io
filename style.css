@@ -936,3 +936,18 @@ body {
     display: flex; /* Show hamburger icon */
   }
 }
+
+@media (max-width: 1488px) {
+  .nav-links {
+    display: none; /* Hide by default */
+    position: absolute; /* Positioning */
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+    background-color: white; /* Background for dropdown */
+    width: 100%; /* Full width */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show when active */
+  }
+}
